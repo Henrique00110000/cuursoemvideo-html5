@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,38 @@
     <title>Fontes externas</title>
     <style>
         @font-face {
-            font-family: f;
-            src: url();
+            font-family: 'elegant';
+            src: url('fonts/MATIOTT ELEGANT FONT.otf') format('opentype'),
+                url('fonts/MATIOTT ELEGANT FONT.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+                Tipos de format()
+                - opentype (stf)
+                - truetype (ttf)
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
         }
 
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        h1{
-            font-family: 'Times New Roman', Times, serif;
+
+        h1 {
+            font-family: 'elegant', Times, serif;
             font-size: 3em;
+            font-weight: normal;
         }
     </style>
 </head>
+
 <body>
     <h1>Titulo</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit commodi doloribus facere omnis ab minus aperiam excepturi id labore harum tenetur quaerat ratione autem repudiandae, consequuntur unde cumque accusamus voluptas!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit commodi doloribus facere omnis ab minus aperiam
+        excepturi id labore harum tenetur quaerat ratione autem repudiandae, consequuntur unde cumque accusamus
+        voluptas!</p>
 </body>
+
 </html>
